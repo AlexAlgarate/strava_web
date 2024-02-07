@@ -1,0 +1,8 @@
+reflex
+python-dotenv
+black
+isort
+flake8
+requests
+selenium
+pandas

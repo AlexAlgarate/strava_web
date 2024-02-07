@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "strava-web"
+version = "0.1.0"
+description = ""
+authors = ["Alex <alex.algarate@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.1"
+reflex = "^0.3.10"
+black = "^24.1.1"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+requests = "^2.31.0"
+selenium = "^4.17.2"
+pandas = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

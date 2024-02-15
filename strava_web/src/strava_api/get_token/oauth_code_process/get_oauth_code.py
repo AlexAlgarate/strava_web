@@ -6,10 +6,10 @@ from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.remote.webelement import WebElement
 
-from strava_web.src.strava_api.tokens_process.oauth_code_process.extract_code import (
+from strava_web.src.strava_api.get_token.oauth_code_process.extract_code import (
     ExtractCode,
 )
-from strava_web.src.strava_api.tokens_process.oauth_code_process.login_strava import (
+from strava_web.src.strava_api.get_token.oauth_code_process.login_strava import (
     LoginStrava,
 )
 from strava_web.utils import exc_log
@@ -23,7 +23,8 @@ class OauthCodeGetter:
     A class responsible for obtaining the OAuth code needed to obtain an access token
 
     Methods:
-        - get_oauth_code() -> str: Retrieves the required OAuth code for acquiring an access token.
+        - get_oauth_code() -> str: Retrieves the required OAuth code for
+        acquiring an access token.
     """
 
     def get_oauth_code(self) -> str:

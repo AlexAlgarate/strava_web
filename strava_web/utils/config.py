@@ -8,7 +8,7 @@ from strava_web.utils.logger import exception_logger as exc_log
 try:
     load_dotenv()
     client_id_env: str = "CLIENT_ID"
-    secret_key_env: str = "SECRET_KEY"
+    secret_key_env: str = "SECRET_CLIENT"
     email_env: str = "EMAIL"
     password_env: str = "PASSWORD"
     access_token_env: str = "ACCESS_TOKEN"

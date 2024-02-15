@@ -38,9 +38,18 @@ def create_log_folder(log_folder: str) -> None:
 log_folder: str = "logs/"
 create_log_folder(log_folder=log_folder)
 
-error_logger = configure_logger("error_logger", f"{log_folder}error_logger.log")
-info_logger = configure_logger("info_logger", f"{log_folder}info_logger.log")
-warning_logger = configure_logger("warning_logger", f"{log_folder}warning_logger.log")
+error_logger = configure_logger(
+    "error_logger",
+    f"{log_folder}error_logger.log",
+)
+info_logger = configure_logger(
+    "info_logger",
+    f"{log_folder}info_logger.log",
+)
+warning_logger = configure_logger(
+    "warning_logger",
+    f"{log_folder}warning_logger.log",
+)
 exception_logger = configure_logger(
     "exception_logger", f"{log_folder}exception_logger.log"
 )

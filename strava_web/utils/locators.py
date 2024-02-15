@@ -5,7 +5,11 @@ from selenium.webdriver.support import expected_conditions as EC
 
 login_elements: Dict[
     str,
-    Tuple[Union[EC.visibility_of_element_located, EC.element_to_be_clickable], By, str],
+    Tuple[
+        Union[EC.visibility_of_element_located, EC.element_to_be_clickable],
+        By,
+        str,
+    ],
 ] = {
     "email": (EC.visibility_of_element_located, By.ID, "email"),
     "password": (EC.visibility_of_element_located, By.ID, "password"),
@@ -17,7 +21,14 @@ login_elements: Dict[
 }
 
 alert_box_message: Dict[
-    str, Tuple[Union[EC.visibility_of_element_located, By, str]]
+    str,
+    Tuple[
+        Union[
+            EC.visibility_of_element_located,
+            By,
+            str,
+        ]
+    ],
 ] = {
     "alert_box": (
         EC.visibility_of_element_located,
@@ -32,7 +43,16 @@ ALERT_MESSAGES: List[str] = [
 ]
 
 
-oauth_elements: Dict[str, Tuple[Union[EC.element_to_be_clickable, By, str]]] = {
+oauth_elements: Dict[
+    str,
+    Tuple[
+        Union[
+            EC.element_to_be_clickable,
+            By,
+            str,
+        ]
+    ],
+] = {
     "authorize_button": (
         EC.element_to_be_clickable,
         By.CSS_SELECTOR,
@@ -42,7 +62,11 @@ oauth_elements: Dict[str, Tuple[Union[EC.element_to_be_clickable, By, str]]] = {
 
 correct_elevation_elements: Dict[
     str,
-    Tuple[Union[EC.visibility_of_element_located, EC.element_to_be_clickable], By, str],
+    Tuple[
+        Union[EC.visibility_of_element_located, EC.element_to_be_clickable],
+        By,
+        str,
+    ],
 ] = {
     "indoor_cyclig": (
         EC.visibility_of_element_located,

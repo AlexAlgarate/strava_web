@@ -13,13 +13,15 @@ class ActivityFetcher:
         self.api_request = RequestActivities(api_url=api_url)
 
     def get_latest_activities(
-        self, page_size: int = 100
+        self,
+        page_size: int = 100,
     ) -> List[Dict[str, Union[int, str]]]:
         """
         Fetches the latest activities by making GET requests to the Strava API.
 
         Args:
-            page_size (int): Maximum number of activities per page. Default is 100.
+            page_size (int): Maximum number of activities per page.
+                Default is 100.
 
         Returns:
             List of activities in JSON format

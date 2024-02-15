@@ -6,3 +6,4 @@
 .web/
 __pycache__/
 logs/
+.ruff_cache/
